@@ -1,0 +1,238 @@
+\documentclass[letterpaper,9pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{10in}
+\setlength{\headheight}{-.25in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\ressubitem}[1]{\item #1 \vspace{-2pt} \hspace{.35in}}
+\newcommand{\resheading}[1]{{\large\parashade[0] {sharpcorners}{\textbf{#1 }}}}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & {#2} \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Eric Yang}  & \\
+206 Julian Drive E. &  Tel. +1 973.580.1295\\
+Warminster, PA 18974 & eric.hwai.yu.yang@gmail.com \\
+
+\end{tabular*}
+\vspace{0.1in}
+
+\begin{itemize}
+
+\resheading{Summary}
+\item{Data Scientist specializing in data visualization, machine learning and application development for the pharmaceutical and biotech industries}
+
+
+\resheading{Technical Skills}
+\item{\textbf{Programming:} R, Python, Node.js, Swift, Rust, HTML, SQL, HBase, Hadoop}\\
+\item{\textbf{Distributed Systems:} MPI, Apache Spark, Databricks}
+\item{\textbf{Data Visualization:} D3.js, Tableau, RShiny}
+\item{\textbf{Systems Engineering:} AWS, Docker, Kubernetes, Airflow}
+
+\end{itemize}
+
+
+
+\resheading{Working Experience}
+
+
+\ressubheading{Medidata AI}{\textbf{New York, NY}}{Senior Director of Data Science}{\textbf{Nov 2022-Current}}
+\begin{itemize}
+\resitem{Leading the Data Science Consulting Practice for Medidata}
+	\begin{itemize}
+	\item Provide Subject Matter Expertise for Consulting Engagements
+	\item Establishing best coding practices for Medidata AI
+	\item Development of Staff in both Software Engineering and Data Science expertise
+	\end{itemize}
+\resitem{Research and Development of AI Enabled Products}
+	\begin{itemize}
+	\item Automated Mapping of EDC to SDTM
+	\item Developing Use Cases for Medidata Link
+	\end{itemize}
+\end{itemize}
+
+\ressubheading{CVS Aetna}{\textbf{New York, NY}}{Director of Data Science}{\textbf{Dec 2021-Nov 2022}}
+\begin{itemize}
+\resitem {Development of Deep Neural Network for A1C Prediction from Claims Data }
+	\begin{itemize}
+	\item Prediction of A1C Levels are used to drive identification of diabetics who have open gaps in care.
+	\end{itemize}
+
+\resitem{Responsible for the continued improvements to ngTDC}
+	\begin{itemize}
+	\item ngTDC aims to improve the health outcomes of diabetics by using nudges to close gaps in care, i.e. asking physicians about suitability of 2nd line medication
+	\item Developed new causal models to replace older tree based model
+	\item Professionalized the software development practices of the ngTDC data science team
+	\item Managed stakeholders with respect to product features and model performance
+	\item Leading the migration of current application to GCP
+	\end{itemize}
+\end{itemize}
+
+\ressubheading{Novartis Institute for Biomedical Research}{\textbf{Cambridge, MA}}{Associate Director/Senior Principal}{\textbf{May 2018-Dec 2021}}
+\begin{itemize}
+\resitem {Development of Automated Safety Monitoring System for Clinical/Pre-clinical trials }
+	\begin{itemize}
+	\item Utilizes autoencoders to flag anomalies within clinical data without requiring pre-specified rules
+	\end{itemize}
+
+\resitem{Creation of software framework to streamline data and material handling for Apple Watches in Clinical Trials}
+	\begin{itemize}
+	\item Creation of both the iWatch/iPhone App as well as the backend to register/consent/record data from patients within clinical trials
+	\end{itemize}
+
+\resitem{Creation of Lasso Attention Layers for interpretable machine learning}
+	\begin{itemize}
+	\item Independent Research project that implemented a pass through input layer in Keras to identify which features are important for prediction tasks
+	\end{itemize}
+	\begin{itemize}
+	\item Use on high throughput proteomics data, suggests significant improvements in model parsimony and interpretability vs. traditional methods. 
+	\end{itemize}
+\resitem{AC/DC Asthma/COPD prediction algorithm with RWE data (WO2020183365A1)}
+	\begin{itemize}
+	\item Developed the unsupervised rejection model that allows for the rejection of other disese types not seen within the training data
+	\item Responsible for bringing into production, the ML model for use in conjunction with a smart spirometer
+	\end{itemize}
+\end{itemize}
+
+
+\ressubheading{Covance Inc.}{\textbf{Princeton, NJ}}{Associate Director of Data Sciences}{\textbf{2013-May 2018}}
+\begin{itemize}
+	\resitem {Demonstrate the utility of data collected by Labcorp/Covance for clinical trial planning and Real World Evidence}
+	\resitem{Technical Lead for the  Clinical Data Warehouse}
+		\begin{itemize}
+			\item Designed a HBase/Apache Phoenix Data Store allowing for schema flexibility while retaining SQL querying capability fsor cross trial analysis
+		\end{itemize}
+	\resitem{Technical Lead for Xcellerate Knowledge Base: Optimizing Country/Site Selection for Clinical Trials}
+		\begin{itemize}
+		\item Solution identifies highest performing clinical sites for use in clinical trials
+		\item Finds most cost effective distribution of countries and sites that meet sponsor timeline requirements
+		\end{itemize}
+	\resitem{Project Lead for Statistical Monitoring of Clinical Sites}
+	\begin{itemize}
+	\item Utilizes advanced machine learning techniques to look for data anomalies in ongoing clinical trials
+\end{itemize}
+\end{itemize}
+
+\ressubheading{Johnson \& Johnson}{\textbf{Spring House, PA}}{Senior Scientist}{\textbf{2010-2013}}
+\begin{itemize}
+\resitem{Developed Synchronization Framework For the Analysis and Conduct of Clinical Trials in AD}
+\begin{itemize}
+\item Greatly increases the ability to identify statistically significant treatment effect in AD trials
+\item Can demonstrate statistically significant treatment effect in prior failed trials
+\end{itemize}
+\resitem{Supported Secondary Analysis of Bapineuzumab Clinical Trials}
+\begin{itemize}
+\item Applied synchronization framework to identify the most likely subpopulation to show treatment effect
+\item Evaluated clinical endpoints for sensitivity in a mild to moderate population
+\item Utilized GWAS Datasets to predict age of AD onset
+\end{itemize}
+\resitem{Part of the Internal Biomarkers Working group to assess blood based proteomic markers for AD}
+
+\end{itemize}
+
+
+
+\begin{itemize}
+\resheading{Education}
+
+\item
+\ressubheading{Harvard MGH}{\textbf{Boston, MA}}{Postdoc}{\textbf{2008-2010}}
+\begin{itemize}
+\resitem{Developed Models for Dendritic Cell Chemotaxis}
+\resitem{Developed method for the enzymatic reduction of hemoglobin for artificial blood (US9387152)}
+\end{itemize}
+
+
+\item\ressubheading{Rutgers, The State University of New 
+Jersey}{\textbf{Piscataway, NJ}}{Ph.D., Biomedical Engineering}{\textbf{2004 - 2008}}
+
+
+\item\ressubheading{Johns Hopkins University}{\textbf{Baltimore, MD}}{BS in Biomedical Engineering/Computer Science)}{\textbf{1999-2003}}
+\end{itemize}
+%\begin{itemize}
+%\resheading{Working Experience}
+%\item
+%\ressubheading{UMS Group}{\textbf{Parsippany, NJ}}{Staff Programmer}{\textbf{2003-2004}}
+%\begin{itemize}
+%\resitem{Wrote an Internal Business Intelligence Package for PACE Report Generation}
+%\resitem{Provided Help Desk Support}
+%\end{itemize}
+%\end{itemize}
+\pagebreak
+\resheading{Peer Reviewed Journal Publications and Conference Proceedings}
+\begin{enumerate}
+
+
+\item{{\small  Agrafiotis D.K., \textbf{Yang E.}, Littman G.S., Byttebier G., Dipietro L., DiBernardo A., Chavez J.C., Rykman A., McArthur K., Hajjar K., Lees K.R., Volpe B.T.,  Krams M., Krebs H.I.,``Accurate prediction of clinical stroke scales and improved biomarkers of motor impairment from robotic measurements." PloS One (2021)}}
+
+
+\item{{\small \textbf{Yang E.}, Scheff J.D., Shen S.C., Farnum M.A., Sefton J, Lobanov V.S., Agrafiotis D.K., ``A late-binding, distributed, NoSQL warehouse for integrating patient data from clinical trials." Database (2019)}}
+
+\item{{\small Agrafiotis D.K., Lobanov V.S., Farnum M.A, \textbf{Yang, E.}, Ciervo J., Walega M., Baumgart A., Mackey A.J., ``Risk-based Monitoring of Clinical Trials: An Integrative Approach." Clinical Therapeutics (2018)}}
+
+\item{{\small Krebs H.I., Krams M., Agrafiotis D.K., DiBernardo A., Chavez J.C., Littman G.S., \textbf{Yang E.}, Byttebier G., Dipietro L., Rykman A., McArthur K., Hajjar K., Lees K.R., Volpe B.T., ``Robotic measurement of arm movements after stroke establishes biomarkers of motor recovery." Stroke (2014)}}
+
+\item{{\small Samtani, M.N., N. Raghavan, Y. Shi, G. Novak, M. Farnum, V. Lobanov, T. Schultz, \textbf{E. Yang},  A. DiBernardo, V. Narayan, Alzheimer's Disease Neuroimaging Initiative. ``Disease progression model in subjects with mild cognitive impairment from the Alzheimer's disease neuroimaging initiative: CSF biomarkers predict population subtypes." British Journal of Pharmacology (2013)}}
+
+\item{{\small Ye J., M. Farnum, \textbf{E. Yang}, R. Verbeeck, V. Lobanov, N. Raghavan,  A. DiBernardo, V. Narayan, ``Sparse learning and stability selection for predicting MCI to AD conversion using baseline ADNI data." BMC Neurology(2012)}}
+
+\item{{\small Raghavan N, M.N. Samtani, M. Farnum, \textbf{E. Yang}, G. Novak, M. Grundman, V. Narayan, A. Dibernardo; Alzheimer�s Disease Neuroimaging Initiative. ``The ADAS-Cog revisited: Novel composite scales based on ADAS-Cog to improve efficiency in MCI and early AD trials." Alzheimer's and Dementia (2012)}}
+
+\item{{\small Schultz T., \textbf{E. Yang}, M. Farnum, V. Lobanov, R. Verbeeck, N. Raghavan, M.N. Samtani, G. Novak, Y. Shi, V. Narayan, A. DiBernardo. ``A novel subject synchronization clinical trial design for Alzheimer's disease." Journal of Alzheimer's Disease (2012)}}
+
+\item{{\small Grundman M. \textbf{E. Yang}, A. Dibernardo. ``Is there a rationale for including only patients already being treated with acetylcholinesterase inhibitors in a prodromal AD trial?" J Nutr Health Aging (2012)}}
+
+\item{{\small Samtani, M.N., M. Farnum, V. Lobanov, N. Raghavan, \textbf{E. Yang},  A. DiBernardo, V. Narayan, Alzheimer's Disease Neuroimaging Initiative. ``An improved model for disease progression in patients from the Alzheimer's disease Neuroimaging Initiative." Journal of Clinical Pharmacology (2012)}}
+
+ \item{{\small Liu P, D.K. Agrafiotis, D.N. Rassokhin, \textbf{E. Yang}.  ``Accelerating chemical database searching using graphics processing units (GPUs)". J. Chem. Inf. Model (2011)}}
+
+\item{{\small \textbf{Yang E.}, P. Liu, D.N. Rassokhin, D.K. Agrafiotis. ``Stochastic proximity embedding on graphics processing units (GPUs) � taking multidimensional scaling to a new scale". J. Chem. Inf. Model. (2011)}}
+
+\item{{\small \textbf{Yang E.}, M. Farnum, V. Lobanov, T. Schultz, R. Verbeeck, N. Raghavan, M.N. Samtani, G. Novak, V. Narayan, A. DiBernardo, Alzheimer's Disease Neuroimaging Initiative, ``Quantifying the pathophysiological timeline of Alzheimer's disease", Journal of Alzheimer's Disease (2011)}}
+
+\item{{\small Tung, N.T., \textbf{E. Yang}, and I.P. Androulakis, ``Machine Learning in Gene Promoter Identification'', Machine Learning Research Program, NOVA Science Publishers (2008)}}
+\item{{\small Foteinou, P.T., \textbf{E. Yang}, and I.P. Androulakis, ``Networks, Biology and Systems Engineering: A Case study in Inflammation'', Proceedings of the 5th International Conference on Foundations of Computer Aided Process Operations (FOCAPO), Cambridge, MA (July 2008)}}
+\item{{\small \textbf{Yang, E.}, K. King, M.L. Yarmush and I.P Androulakis, Extraction of Transcriptional Signaling Networks via Globally Optimal Biclustering. Proceedings of the $5^{th}$ International Conference of the Foundations of Computer-Aided Process Operations (FOCAPO), Cambridge, MA (2008)}}
+\item{{\small \textbf{Yang, E.}, T.J. Maguire, M.L. Yarmush, F. Berthiaume and I.P. Androulakis, Identification of Regulatory Mechanisms of the Hepatic Response to Thermal Injury. \emph{Comp. Chem. Eng.}, 32(1):356 (2008)}}
+\item{{\small \textbf{Yang, E.}, R.R. Almon, D.C. Dubois, W.J. Jusko and I.P. Androulakis, Extracting Global System Dynamics of Corticosteroid Genomic Effects in Rat Liver. \emph{Journal of Pharmacology and Experimental Therapeutics}, doi:10.1124/jpet.107.133074 (2007)}}
+\item{{\small Foteinou, P.T., \textbf{E. Yang}, G.K. Saharidis, M.G. Ierapetritou and I.P. Androulakis, A systematic framework for the synthesis and analysis of regulatory networks. \emph{Journal of Global Optimization} doi:10.1007/s10898-007-9266-6 (2007)}}
+\item{{\small \textbf{Yang, E.}, P.T. Foteinou, K.R. King, M.L. Yarmush and I.P. Androulakis, A Novel Non-overlapping Bi-clustering Algorithm for Network Generation using Living Cell Array data. \emph{Oxford Bioinformatics},23(17):2306 (2007)}}
+\item{{\small\textbf{Yang, E.} and I.P. Androulakis, ``Assessing the Information Content of Microarray Time Series.'' \emph{Encyclopedia of Healthcare Information Systems} IGI Global (2008)}}
+\item{{\small Androulakis, I.P. and \textbf{E. Yang}, ``Selection of maximally informative genes'', (Accepted) \emph{Encyclopedia of Optimization}, 2nd Edition (C.A. Floudas and P. Pardalos, Editors), Springer Editions (2007)}}
+\item{{\small \textbf{Yang, E.}, T. Maguire, M.L. Yarmush and I.P. Androulakis, Informative Gene Selection and Design of Regulatory Networks Using Integer Optimization. \emph{Comp. Chem. Eng.}, doi:10.1016/j.compchemeng.2007.01.009 (2007)}}
+\item{{\small Androulakis, I.P., \textbf{E. Yang}, R.R. Almon, D.C. Dubois and W.J. Jusko, Analysis of Time-Series Gene Expression Data: Methods, Challenges and Opportunities. \emph{Annual Review Biomedical Engineering}, 9:205 (2007)}}
+\item{{\small\textbf{Yang, E.}, D. Simcha, R.R. Almon, D.C. Dubois, W.J. Jusko and I.P. Androulakis, Context Specific Transcription Factor Prediction. \emph{Annals of Biomedical Engineering}, 35(6):1053 (2007)}}
+\item{{\small \textbf{Yang, E.}, T. Maguire, M.L. Yarmush, F. Berthiaume and I.P. Androulakis, Bioinformatics Analysis of the Early Inflammatory Response in a Rat Thermal Injury Model. \emph{BMC Bioinformatics}, 8:10 (2007) }}
+\item{{\small \textbf{Yang, E.} and I.P. Androulakis, Information Content of Short Time Series Expression Data. \emph{Proceedings of the 28th IEEE EMBS Annual International Conference}, 1:5535 (2006)}}
+\item{{\small \textbf{Yang, E.}, F. Berthiaume, M. Yarmush and I.P. Androulakis, An Integrative Systems Biology Approach for Analyzing Liver Hypermetabolism. Proceedings of the Joint 9th  Int. Symp. Process Systems Engineering and 16th  European Symp. Computer Aided Process Engineering, Garmisch-Partenkirchen, Germany (2006)}}
+\end{enumerate}
+
+\end{document}
